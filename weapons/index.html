@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
+	<form id="test">
+	  <label for="in">Input:</label><br>
+	  <input type="text" id="in" name="in" value="" size=120>
+	  <button type="submit">Submit</button>
+	</form>
+	<div class="test-out">
+	  <textarea readonly class="test-out-contents" rows="1" cols="120"></textarea>
+	</div>
+	
 	<div class="controls">
-	  <button id="reload" type="button">Run!</button>
+	  <button id="reload" type="button">Run All!</button>
 	</div>
 
 	<div class="event-log">
 	  <label>Event log:</label>
 	  <textarea readonly class="event-log-contents" rows="50" cols="120"></textarea>
 	</div>
+	
+
 	
 	<script src="test.js"></script>
 </body>

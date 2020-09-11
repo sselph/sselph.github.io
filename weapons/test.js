@@ -498,3 +498,16 @@ reload.addEventListener('click', () => {
       run();
   }, 200);
 });
+
+const form = document.querySelector('#test');
+const out = document.querySelector('.test-out-contents');
+
+form.addEventListener("submit", (f) => {
+	let id = findId(form.querySelector('#in').value);
+	if (id == undefined){
+		out.textContent = 'NOT_FOUND';
+	} else {
+		out.textContent = `WEAP - Weapon [${id.formId}] <${id.editorId}>`;
+	}
+	f.preventDefault();
+});
